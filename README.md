@@ -1,4 +1,4 @@
-# 吉可回收控制台前端
+# MusicTool
 
 > A Vue.js project
 
