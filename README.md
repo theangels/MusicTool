@@ -1,6 +1,6 @@
 # MusicTool
 
-> A Vue.js project
+&emsp;&emsp;A web tool to generate music note which can recognised by "NotationParser" project.
 
 ## Build Setup
 
