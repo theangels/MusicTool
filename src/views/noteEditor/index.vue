@@ -228,9 +228,11 @@
 
           case 96:
             _this.addNote('0')
+            _this.resetNote()
             break;
           case 97:
             _this.addNote('1')
+            _this.resetNote()
             break;
           case 98:
             if (_this.isSemitone) {
@@ -238,6 +240,7 @@
             } else {
               _this.addNote('2')
             }
+            _this.resetNote()
             break;
           case 99:
             if (_this.isSemitone) {
@@ -245,9 +248,11 @@
             } else {
               _this.addNote('3')
             }
+            _this.resetNote()
             break;
           case 100:
             _this.addNote('4')
+            _this.resetNote()
             break;
           case 101:
             if (_this.isSemitone) {
@@ -255,6 +260,7 @@
             } else {
               _this.addNote('5')
             }
+            _this.resetNote()
             break;
           case 102:
             if (_this.isSemitone) {
@@ -262,6 +268,7 @@
             } else {
               _this.addNote('6')
             }
+            _this.resetNote()
             break;
           case 103:
             if (_this.isSemitone) {
@@ -269,8 +276,8 @@
             } else {
               _this.addNote('7')
             }
+            _this.resetNote()
             break;
-
           case 90:
             _this.selectedTie = '无'
             break
@@ -341,6 +348,15 @@
           'id': new Date().getTime(),
           note: '|'
         }]
+      },
+      resetNote() {
+        var _this = this
+
+        _this.selectedDot = '无'
+
+        if (_this.selectedTie == '连音终点') {
+          _this.selectedTie = '无'
+        }
       }
     },
   };
